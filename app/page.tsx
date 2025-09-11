@@ -220,7 +220,7 @@ export default function Home() {
           <div>
             <p className="text-sm font-medium tracking-wide text-foreground/70">About Grace Worship Center</p>
             <h2 className="mt-2 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-              We're a family of
+              We are a family of
               <span className="block text-purple-200">200+ families</span>
             </h2>
             <div className="mt-4 text-sm leading-7 text-foreground/80">
