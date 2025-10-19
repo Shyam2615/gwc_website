@@ -40,7 +40,7 @@ const leadership = [
     name: "Pastor Sanjoy R M",
     role: "Senior Pastor",
     image: "/sanjoy.png",
-    bio: "Pastor Sanjoy has been serving at Grace Worship Center for over 15 years, leading with passion and dedication to God's Word."
+    bio: "Pastor Sanjoy has been serving at Grace Worship Center for over 15 years, leading with passion and dedication to God&apos;s Word."
   },
   {
     name: "Pastor Ravi C",
@@ -91,7 +91,7 @@ export default function About() {
               grown into a vibrant church family of over 200 families.
             </p>
             <p className="text-foreground/80 leading-7">
-              Over the years, we have seen God's faithfulness in our midst. From our humble beginnings to our 
+              Over the years, we have seen God&apos;s faithfulness in our midst. From our humble beginnings to our 
               current ministry, we remain committed to the core values that have guided us: authentic worship, 
               biblical teaching, genuine community, and compassionate service.
             </p>
@@ -185,7 +185,7 @@ export default function About() {
         <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-indigo-600/20 via-purple-600/20 to-pink-600/20 p-8 text-center">
           <h2 className="text-3xl font-semibold mb-4">Join Our Family</h2>
           <p className="text-lg text-foreground/80 mb-6 max-w-2xl mx-auto">
-            Whether you're exploring faith or looking for a church home, we'd love to welcome you 
+            Whether you&apos;re exploring faith or looking for a church home, we&apos;d love to welcome you 
             into our community. Come as you are and discover what God has in store for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

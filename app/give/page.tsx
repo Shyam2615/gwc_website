@@ -104,7 +104,7 @@ export default function Give() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-semibold sm:text-5xl">Give</h1>
           <p className="mt-4 text-lg text-foreground/70">
-            "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." - 2 Corinthians 9:7
+            &quot;Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver.&quot; - 2 Corinthians 9:7
           </p>
         </div>
 
