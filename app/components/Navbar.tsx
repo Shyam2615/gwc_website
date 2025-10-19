@@ -16,6 +16,9 @@ export default function Navbar() {
             </Link>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
+            <Link className="hover:opacity-80" href="/about">About</Link>
+            <Link className="hover:opacity-80" href="/ministries">Ministries</Link>
+            <Link className="hover:opacity-80" href="/events">Events</Link>
             <Link className="hover:opacity-80" href="/give">Give</Link>
             <Link className="hover:opacity-80" href="/contact">Contact</Link>
           </nav>
