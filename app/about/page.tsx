@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Footer from "../components/Footer";
 
 const values = [
@@ -140,7 +141,7 @@ export default function About() {
       <section className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-semibold mb-4">What We Believe</h2>
-          <p className="text-foreground/70">Our foundational beliefs based on God's Word</p>
+          <p className="text-foreground/70">Our foundational beliefs based on God&apos;s Word</p>
         </div>
         <div className="rounded-2xl border border-white/10 bg-black/5 p-8">
           <div className="grid gap-4 md:grid-cols-2">
@@ -189,18 +190,18 @@ export default function About() {
             into our community. Come as you are and discover what God has in store for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <Link 
               href="/" 
               className="inline-flex items-center justify-center rounded-md bg-indigo-600 px-6 py-3 text-white font-medium hover:bg-indigo-500 transition-colors"
             >
               Plan Your Visit
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/ministries" 
               className="inline-flex items-center justify-center rounded-md bg-white/10 px-6 py-3 text-white font-medium ring-1 ring-inset ring-white/30 hover:bg-white/15 transition-colors"
             >
               Explore Ministries
-            </a>
+            </Link>
           </div>
         </div>
       </section>
