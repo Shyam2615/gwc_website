@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/main_pic.png"
+          src="/chruch.jpg"
           alt="Grace Worship Center"
           fill
           priority

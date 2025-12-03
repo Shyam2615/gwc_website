@@ -17,8 +17,9 @@ export default function Home() {
             <div className="h-[260px] sm:h-[340px] md:h-[420px]">
               <Carousel
                 images={[
-                  { src: "/main_pic.png", alt: "Church" },
-                  { src: "/senior_pastor_2.png", alt: "Window" },
+                  { src: "/graduation.jpg", alt: "Church" },
+                  { src: "/moments_2.jpg", alt: "Window" },
+                  { src: "/moments_3.jpg", alt: "Window" },
                 ]}
                 autoPlayMs={4000}
                 rounded="rounded-2xl"
@@ -36,7 +37,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/5">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/senior_pastor.png"
+                src="/pastor_img.jpg"
                 alt="Senior Pastor"
                 fill
                 sizes="(min-width: 1024px) 600px, 100vw"
@@ -178,12 +179,12 @@ export default function Home() {
         </div>
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {[
-            { src: "/sanjoy.png", name: "Pastor Sanjoy R M", role: "Senior Pastor" },
-            { src: "/ravi.png", name: "Pastor Ravi C", role: "Associate Pastor" },
-            { src: "/david.png", name: "Pastor David Y", role: "Assistant Pastor" },
-            { src: "/shelji.png", name: "Pastor Shelji Sanjoy", role: "Assistant Pastor" },
-            { src: "/pramila.png", name: "Pastor Pramila Ravi", role: "Assistant Pastor" },
-            { src: "/shalom.png", name: "Master Shalom", role: "Worship Leader" },
+            { src: "/senior_pastor.jpg", name: "Pastor Sanjoy R M", role: "Senior Pastor" },
+            { src: "/ravi_pastor.jpg", name: "Pastor Ravi C", role: "Associate Pastor" },
+            { src: "/david.jpg", name: "Pastor David Y", role: "Assistant Pastor" },
+            { src: "/shelji.jpg", name: "Pastor Shelji Sanjoy", role: "Assistant Pastor" },
+            { src: "/pramila.jpg", name: "Pastor Pramila Ravi", role: "Assistant Pastor" },
+            { src: "/shalom.jpeg", name: "Master Shalom", role: "Worship Leader" },
           ].map((p, i) => (
             <div key={i} className="overflow-hidden rounded-2xl border border-white/10 bg-black/5">
               <div className="relative aspect-[4/3]">

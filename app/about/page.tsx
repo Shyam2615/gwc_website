@@ -40,20 +40,20 @@ const leadership = [
   {
     name: "Pastor Sanjoy R M",
     role: "Senior Pastor",
-    image: "/sanjoy.png",
+    image: "/senior_pastor.jpg",
     bio: "Pastor Sanjoy has been serving at Grace Worship Center for over 15 years, leading with passion and dedication to God&apos;s Word."
   },
   {
     name: "Pastor Ravi C",
-    role: "Associate Pastor",
-    image: "/ravi.png",
+    role: "Pastor",
+    image: "/ravi_pastor.jpg",
     bio: "Pastor Ravi brings years of experience in pastoral care and community outreach to our church family."
   },
   {
-    name: "Pastor David Y",
-    role: "Assistant Pastor",
-    image: "/david.png",
-    bio: "Pastor David leads our youth ministry and worship teams with energy and a heart for the next generation."
+    name: "Pastor Shelji S M",
+    role: "Pastor",
+    image: "/shelji.jpg",
+    bio: "Pastor Shelji leads our youth ministry and worship teams with energy and a heart for the next generation."
   }
 ];
 
@@ -76,7 +76,7 @@ export default function About() {
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/5">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/main_pic.png"
+                src="/family.png"
                 alt="Grace Worship Center building"
                 fill
                 sizes="(min-width: 1024px) 600px, 100vw"

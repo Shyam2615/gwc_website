@@ -1,6 +1,15 @@
 "use client";
 import { useState } from "react";
 import Footer from "../components/Footer";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import CheckoutPage from "../components/CheckoutPage";
+
+if(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY === undefined) {
+  throw new Error("Stripe public key is not defined in environment variables");
+}
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
 
 const donationAmounts = [500, 1000, 2000, 5000, 10000];
 
@@ -33,12 +42,13 @@ const donationCategories = [
 ];
 
 export default function Give() {
-  const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
+  const [selectedAmount, setSelectedAmount] = useState<number | null>(100);
   const [customAmount, setCustomAmount] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("general");
   const [donorName, setDonorName] = useState("");
   const [donorEmail, setDonorEmail] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
+  const [showCheckout, setShowCheckout] = useState(false);
 
   const handleAmountSelect = (amount: number) => {
     setSelectedAmount(amount);
@@ -49,6 +59,11 @@ export default function Give() {
     setCustomAmount(value);
     setSelectedAmount(null);
   };
+
+  const convertToSubcurrency = (amount: number | null, factor = 100) => {
+    if (amount == null) return 0;
+    return Math.round(amount * factor);
+  }
 
   const getFinalAmount = () => {
     if (selectedAmount) return selectedAmount;
@@ -222,13 +237,37 @@ export default function Give() {
                 </div>
               </div>
 
-              <button
+              {/* <button
                 onClick={handleDonate}
                 disabled={getFinalAmount() <= 0 || isProcessing}
                 className="w-full mt-6 bg-indigo-600 hover:bg-indigo-500 disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-medium py-3 px-6 rounded-lg transition-colors"
               >
                 {isProcessing ? "Processing..." : "Donate Now"}
-              </button>
+              </button> */}
+
+              <Elements
+                stripe={stripePromise}
+                options={{
+                  mode: "payment",
+                  amount: convertToSubcurrency(getFinalAmount()),
+                  currency: "inr",
+                }}
+              >
+                <div className="mt-6">
+                  {showCheckout ? (
+                    <CheckoutPage amount={getFinalAmount()} />
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => setShowCheckout(true)}
+                      disabled={getFinalAmount() <= 0}
+                      className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                    >
+                      Proceed to Checkout
+                    </button>
+                  )}
+                </div>
+              </Elements>
 
               <p className="text-xs text-foreground/60 mt-4 text-center">
                 Secure payment processing powered by Stripe

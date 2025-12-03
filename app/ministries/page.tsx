@@ -11,8 +11,10 @@ const ministries = [
     time: "Sunday 8:45am - 10:00pm",
     description: "A vibrant children's ministry where kids learn about Jesus through fun activities, songs, and Bible stories.",
     images: [
-      { src: "/main_pic.png", alt: "Junior Church" },
-      { src: "/senior_pastor_2.png", alt: "Children's Ministry" },
+      { src: "/junior_chruch/junior_1.jpg", alt: "Children's Ministry" },
+      { src: "/junior_chruch/junior_2.jpg", alt: "Children's Ministry" },
+      { src: "/junior_chruch/junior_3.jpeg", alt: "Children's Ministry" },
+      { src: "/moments_3.jpg", alt: "Junior Church" },
     ]
   },
   {
@@ -21,8 +23,8 @@ const ministries = [
     time: "Sunday 10:00am - 1:00pm",
     description: "Our main worship service featuring powerful worship, inspiring messages, and fellowship with the church family.",
     images: [
-      { src: "/main_pic.png", alt: "Sunday Service" },
-      { src: "/senior_pastor_2.png", alt: "Worship" },
+      { src: "/sunday_service/sunday_1.jpeg", alt: "Sunday Service" },
+      { src: "/sunday_service/sunday_2.jpeg", alt: "Sunday Service" },
     ]
   },
   {
@@ -31,8 +33,7 @@ const ministries = [
     time: "Sunday and Monday 6:00pm - 7:30pm",
     description: "Deep dive into God's Word through interactive study sessions that strengthen faith and understanding.",
     images: [
-      { src: "/main_pic.png", alt: "Bible Study" },
-      { src: "/senior_pastor_2.png", alt: "Study Group" },
+      { src: "/bible_study/bible_1.jpeg", alt: "Bible Study" },
     ]
   },
   {
@@ -41,8 +42,9 @@ const ministries = [
     time: "Wednesday 10:00am - 12:00pm",
     description: "A supportive community for women to grow in faith, build relationships, and encourage one another.",
     images: [
-      { src: "/main_pic.png", alt: "Ladies Fellowship" },
-      { src: "/senior_pastor_2.png", alt: "Women's Ministry" },
+      { src: "/ladies_meeting/ladies_2.jpeg", alt: "Ladies Fellowship" },
+      { src: "/ladies_meeting/ladies_1.jpeg", alt: "Ladies Fellowship" },
+      { src: "/ladies_meeting/ladies_3.jpeg", alt: "Ladies Fellowship" },
     ]
   },
   {
@@ -61,8 +63,8 @@ const ministries = [
     time: "Friday 10:00am - 12:30pm",
     description: "A time of focused prayer and fasting to seek God's presence and intercede for our community and world.",
     images: [
-      { src: "/main_pic.png", alt: "Fasting Prayer" },
-      { src: "/senior_pastor_2.png", alt: "Prayer Meeting" },
+      { src: "/friday_meeting/friday_1.jpeg", alt: "Fasting Prayer" },
+      { src: "/friday_meeting/friday_3.jpeg", alt: "Fasting Prayer" },
     ]
   },
   {
@@ -71,8 +73,21 @@ const ministries = [
     time: "Every 2nd Sunday 6:00pm - 7:30pm",
     description: "Dynamic worship and teaching specifically designed for young people to grow in their relationship with Christ.",
     images: [
-      { src: "/main_pic.png", alt: "Youth Sunday" },
-      { src: "/senior_pastor_2.png", alt: "Youth Ministry" },
+      { src: "/youth_meeting/youth_1.jpeg", alt: "Youth Sunday" },
+      { src: "/youth_meeting/youth_2.jpeg", alt: "Youth Sunday" },
+      { src: "/youth_meeting/youth_3.jpeg", alt: "Youth Sunday" },
+      { src: "/youth_meeting/youth_4.jpeg", alt: "Youth Sunday" },
+      { src: "/youth_meeting/youth_5.jpeg", alt: "Youth Sunday" },
+    ]
+  },
+  {
+    id: "Baptism-Service",
+    title: "Baptism Service",
+    time: "",
+    description: "Dynamic worship and teaching specifically designed for young people to grow in their relationship with Christ.",
+    images: [
+      { src: "/baptism_service/baptism_1.jpeg", alt: "Youth Sunday" },
+      { src: "/baptism_service/baptism_2.jpeg", alt: "Youth Sunday" },
     ]
   }
 ];
